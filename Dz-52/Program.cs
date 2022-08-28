@@ -36,9 +36,9 @@ void newArray(int[,] myArray)
     {
         for (int i = 0; i < myArray.GetLength(0); i++)
         {
-            result = (result + myArray[i,j]) ;
+            result += myArray[i,j];
         }
-        result = result / (myArray.GetLength(0) );
+        result /= myArray.GetLength(0);
         Console.Write($"{result:N2}; ");
     }
     return;
